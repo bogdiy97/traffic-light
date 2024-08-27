@@ -11,6 +11,7 @@ export default function TrafficLight({ trafficStates }) {
     return () => {
       clearTimeout(timerId);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentColor]);
   return (
     <div className="traffic-light-container">
