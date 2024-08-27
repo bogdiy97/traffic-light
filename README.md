@@ -1,3 +1,7 @@
+See how the project looks like:
+https://traffic-light-react-exercise.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
