@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./styles.css";
+import TrafficLight from "./TrafficLight";
+const trafficStates = {
+  red: {
+    duration: 4000,
+    backgroundColor: "red",
+    next: "green",
+  },
+  yellow: { duration: 500, backgroundColor: "yellow", next: "red" },
+  green: { duration: 3000, backgroundColor: "green", next: "yellow" },
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <TrafficLight trafficStates={trafficStates} />
     </div>
   );
 }
